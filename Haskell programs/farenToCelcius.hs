@@ -1,4 +1,5 @@
 -- c = (5/9)*(f-32)
+-- given temperature in Farenheit convert it to Celcius
 
 main = do
     print("Enter temp in F : ")

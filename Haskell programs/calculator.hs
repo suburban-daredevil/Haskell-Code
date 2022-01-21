@@ -1,3 +1,5 @@
+-- Build a calculator to perform addition, subtraction, multiplication, division and modulo operations
+
 main = do
     print("Enter number 1 : ")
     num1 <- getLine
@@ -14,7 +16,7 @@ main = do
     let diff = n1 - n2
     let pro = n1*n2
     let quo = n1/n2 --float division
-    --for integer division use, `div` operator
+                    --for integer division use, `div` operator
 
     let rem = x1 `mod` x2
 
