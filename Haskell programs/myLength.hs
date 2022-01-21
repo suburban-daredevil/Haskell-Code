@@ -11,7 +11,7 @@ myLength1(_:xs) = 1 + myLength1 xs
 main = do
     let a = [1,2,3,4,5]
     let b = "Hello Sriram"
-    let c = (3,4,5,6)
+    let c = [3,4,5,6]
     print(myLength1 a)
     print(myLength1 b)
     print(myLength1 c)
