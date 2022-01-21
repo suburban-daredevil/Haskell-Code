@@ -1,3 +1,5 @@
+-- recursion function to concatenate two lists
+
 myappend :: [Int] -> [Int] -> [Int]
 myappend [] l = l
 myappend(x:xs) l = [x] ++ (myappend xs l)
