@@ -6,4 +6,9 @@ check a = do
     else print("Odd")
 
 main = do
-    check 4
+    putStr("Enter number 1 : ")
+    x1 <- getLine
+
+    let n1 = read x1 :: Int
+
+    check n1

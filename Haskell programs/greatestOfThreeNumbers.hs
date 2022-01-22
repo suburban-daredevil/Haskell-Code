@@ -17,4 +17,20 @@ mymaxi :: Int -> Int -> Int -> Int
 mymaxi a b c = max c (max a b)
 
 main = do
-    print(mymaxi1 3 4 54)
+    putStr("Enter number 1 : ")
+    x1 <- getLine
+
+    putStr("Enter number 2 : ")
+    x2 <- getLine
+
+    putStr("Enter number 3 : ")
+    x3 <- getLine
+
+    let n1 = read x1 :: Int
+    let n2 = read x2 :: Int
+    let n3 = read x3 :: Int
+
+    print(maxi n1 n2 n3)
+    print(mymaxi n1 n2 n3)
+    print(mymaxi1 n1 n2 n3)
+
