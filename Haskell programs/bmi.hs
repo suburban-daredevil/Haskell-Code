@@ -1,9 +1,24 @@
 showBmi :: Double -> Double -> String
 showBmi weight height
-    | (weight / height^2) <= 18.5 = "underweight"
-    | (weight / height^2) <= 25.0 = "normal"
-    | (weight / height^2) <= 30.0 = "fat"
+    | bmi <= skinny = "underweight"
+    | bmi <= normal = "normal"
+    | bmi <= fat = "fat"
     | otherwise = "overweight"
+    where 
+        bmi = (weight / height^2)
+        skinny = 18.5
+        normal = 25
+        fat = 30
+
+showBmi1 :: Double -> Double -> String
+showBmi1 weight height
+    | bmi <= skinny = "underweight"
+    | bmi <= normal = "normal"
+    | bmi <= fat = "fat"
+    | otherwise = "overweight"
+    where 
+        bmi = (weight / height^2)
+        (skinny, normal, fat) = (18.5,25.0,30)
 
 main = do
     print("Enter weight in kgs : ")
